@@ -134,3 +134,6 @@ rep
             ![report_xgboost](https://user-images.githubusercontent.com/105877888/233172553-5249f016-f15d-4974-9fd1-6a9dc6b9ccaa.png)
 
 ## Summary
+  - Logistic regression and XGBoost classifier model got the highest accuracy score(84.78%). 
+  - This is an imblanced dataset. F1-score better reflects model performance. Random forest classifier got the lowest f1-score(0.16) on predicting left employees. Logistic regression and decision tree are 0.42, surpass other two models. Overall, logistic regression is best predict the employee attrition.
+  - Since the dataset is imbalanced. Resampling such as oversampling or undersampling is suggested to retrain the models.
