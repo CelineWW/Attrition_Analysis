@@ -20,15 +20,22 @@
       ```
    - Use histogram to check distributions of each column
      
-     Remove unimportant columns(single unique value) for further analysis:
+     Remove 3 unimportant columns(single unique value) for further analysis:
      - Over18 Y
      - StandardHours 80
      - EmployeeCount 1
      
-   ![hist1](https://user-images.githubusercontent.com/105877888/233159024-cf27cc13-8bba-4933-861b-34b56d7ec0cb.png)
-   ![hist2](https://user-images.githubusercontent.com/105877888/233159087-ed33fdbd-8398-4b30-96f8-704bcebe775d.png)
+    ![hist1](https://user-images.githubusercontent.com/105877888/233159024-cf27cc13-8bba-4933-861b-34b56d7ec0cb.png)
+    ![hist2](https://user-images.githubusercontent.com/105877888/233159087-ed33fdbd-8398-4b30-96f8-704bcebe775d.png)
 
-   
+### Seperate dataset by attrition and compare the differences between employee demographics
+   - Seperate dataset by attrition
+      ```
+      left_df = employee_df[employee_df['Attrition'] == 1]
+      stayed_df = employee_df[employee_df['Attrition'] == 0]
+      ```
+     - :raising_hand_man: Employee those stayed: 1233 person (83.88%)
+     - :no_good_man: Employee those left: 237 person (16.12%)
 
 
 ## Summary
