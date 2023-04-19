@@ -19,14 +19,16 @@
       employee_df['Over18'] = employee_df['Over18'].apply(lambda x:1 if x == 'Y' else 0)
       ```
    - Use histogram to check distributions of each column
+     
+     Remove unimportant columns(single unique value) for further analysis:
+     - Over18 Y
+     - StandardHours 80
+     - EmployeeCount 1
+     
    ![hist1](https://user-images.githubusercontent.com/105877888/233159024-cf27cc13-8bba-4933-861b-34b56d7ec0cb.png)
    ![hist2](https://user-images.githubusercontent.com/105877888/233159087-ed33fdbd-8398-4b30-96f8-704bcebe775d.png)
 
    
-   Over18 Y
-   OverTime
-   StandardHours 80
-   EmployeeCount 1
-   Attrition label
+
 
 ## Summary
