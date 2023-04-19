@@ -20,7 +20,6 @@ To verify if the duration of employment depends on employee demografics, this pr
       employee_df['Over18'] = employee_df['Over18'].apply(lambda x:1 if x == 'Y' else 0)
       ```
    - Use histogram to check distributions of each column
-     
      Remove 3 unimportant columns(single unique value) for further analysis:
      - Over18 Y
      - StandardHours 80
@@ -29,7 +28,7 @@ To verify if the duration of employment depends on employee demografics, this pr
      ![hist1](https://user-images.githubusercontent.com/105877888/233161655-0e66f5a0-8e7f-43cc-8cf7-4c68e13d49f1.png)
      ![hist2](https://user-images.githubusercontent.com/105877888/233161731-ff102ca9-2cd2-482e-84aa-6355e634abfc.png)
 
-### Seperate dataset by attrition and compare the differences between employee demographics
+### Data Visualization
    - Seperate dataset by attrition
       ```
       left_df = employee_df[employee_df['Attrition'] == 1]
@@ -42,8 +41,7 @@ To verify if the duration of employment depends on employee demografics, this pr
       - Job level is strongly correlated with total working Years
       - Monthly income is strongly correlated with Job level
       - Monthly income is strongly correlated with total working Years
-      - Age is stongly correlated with monthly income
-      
+      - Age is stongly correlated with monthly income    
       
       ![heatmap](https://user-images.githubusercontent.com/105877888/233162403-05dc1f8d-c227-4ab1-89f4-e17c731b81d4.png)
 
@@ -75,5 +73,16 @@ To verify if the duration of employment depends on employee demografics, this pr
          ![boxplot_gender](https://user-images.githubusercontent.com/105877888/233167669-63c23e23-d2ba-43e3-b580-ea0490aa09c4.png)
          ![boxplot_jobrole](https://user-images.githubusercontent.com/105877888/233167696-fca58782-e239-45d4-8d55-110bf17077b9.png)
 
-      
+### Machine Learning
+   - Data Cleaning
+      - Categorical columns
+      ![cat_df](https://user-images.githubusercontent.com/105877888/233169351-1ef0b4dd-9342-46f2-a7ea-4a8f1a513b5a.png)
+
+      - Numerical columns
+      ![num_df](https://user-images.githubusercontent.com/105877888/233169602-065e344c-567c-4ff8-8604-5e21c485adcf.png)
+
+      - OneHotEncoding and merge dataframe
+      ![X_all](https://user-images.githubusercontent.com/105877888/233169912-3896fd92-06ad-46b0-9c3a-20f160484707.png)
+
+      - Target: `y = employee_df['Attrition']`  
 ## Summary
