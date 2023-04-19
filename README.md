@@ -1,4 +1,13 @@
 # Employee_Attrition_Prediction
+Table of Contents
+1. [Overview](#overview)
+2. [DataSource](#datasource)
+3. [Results](#results)
+   * [Data Preprocessing](#data-preprocessing)
+   * [Data Visualization](#data-visualization)
+   * [Machine Learning](#machine-learning)
+5. [Summary](#summary)
+
 ## Overview 
 To verify if the duration of employment depends on employee demografics, this project trys to discover which are the main effects of employees to make their decision on leave or stay in the company. Based on the analysis, build machine learning models to make predictions and calculate the model accuracy.
    - Analyze employee's charactistics who left or stayed in the company.
