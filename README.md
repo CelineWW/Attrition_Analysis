@@ -83,6 +83,45 @@ To verify if the duration of employment depends on employee demografics, this pr
 
       - OneHotEncoding and merge dataframe
       ![X_all](https://user-images.githubusercontent.com/105877888/233169912-3896fd92-06ad-46b0-9c3a-20f160484707.png)
-
+      
+   - Feature scaling 
+      - Features: `X = minmaxscaler.fit_transform(X_all)`
       - Target: `y = employee_df['Attrition']`  
+   
+   - Split data into training and testing dataset 
+      -test size: 0.25
+
+   - Building Model
+      - Linear: Logistic Regression
+         - Accurarcy: 84.78%
+         - Confusion matrix heatmap
+            ![heatmap_logistic regression](https://user-images.githubusercontent.com/105877888/233171945-e5fdf040-298c-41fc-86c3-558b8a85e1a0.png)
+
+         - classification report
+            ![report_logistic regression](https://user-images.githubusercontent.com/105877888/233172886-1eaf3250-8aa4-411a-bda9-29a065c09adb.png)
+
+      - Decision Tree Classifier
+         - Accurarcy: 80.43%
+         - Confusion matrix heatmap
+            ![heatmap_decision tree classifier](https://user-images.githubusercontent.com/105877888/233172027-5cfcc658-a65d-4fe7-8f45-2bf5fadb1ef5.png)
+
+         - classification report
+            ![report_decision tree](https://user-images.githubusercontent.com/105877888/233172744-0f6446cf-3e04-4cfe-acdf-fc70acb24652.png)
+rep
+      - Random Forest Classifier
+         - Accurarcy: 82.88%
+         - Confusion matrix heatmap
+            ![heatmap_random forest classifier](https://user-images.githubusercontent.com/105877888/233172072-a063bad3-4a0c-4cbf-b05a-fc04bf9273a5.png)
+
+         - classification report
+            ![report_random forest](https://user-images.githubusercontent.com/105877888/233172588-c68092f5-8d81-4c3e-9222-77d9a2aa7058.png)
+
+      - XGBoost Classifier
+         - Accurarcy: 84.78%
+         - Confusion matrix heatmap
+           ![heatmap_xgboost classifier](https://user-images.githubusercontent.com/105877888/233172111-df0551a7-d187-4e79-821b-5780aee36297.png)
+
+         - classification report
+            ![report_xgboost](https://user-images.githubusercontent.com/105877888/233172553-5249f016-f15d-4974-9fd1-6a9dc6b9ccaa.png)
+
 ## Summary
