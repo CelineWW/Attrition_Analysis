@@ -66,7 +66,7 @@ To verify if the duration of employment depends on employee demografics, this pr
          ![countplot_married](https://user-images.githubusercontent.com/105877888/233164204-74d407f2-a139-4f9a-9463-6600d8427f2f.png)
       
       - KDE plots
-         - Employees who live farther than 10miles from the company tend to leave
+         - Employees who live farther than 10 miles from the company tend to leave
          - Employees younger than 30yrs show higher attrition than over 30yrs 
          - Stay in the same team encourage employees to stay
          - Less than 10 total working years tend to leave the company 
@@ -134,6 +134,7 @@ rep
             ![report_xgboost](https://user-images.githubusercontent.com/105877888/233172553-5249f016-f15d-4974-9fd1-6a9dc6b9ccaa.png)
 
 ## Summary
+  - Who tends to leave the company? Single(maritial status), sales representatives (job role), Less involved, less working experienced, whose house far away from the company, younger than 30 years old. Typically, employees at their earlier career stage tend to leave the company compare to those more experiened and need to support family.
   - Logistic regression and XGBoost classifier model got the highest accuracy score(84.78%). 
   - This is an imblanced dataset. F1-score better reflects model performance. Random forest classifier got the lowest f1-score(0.16) on predicting left employees. Logistic regression and decision tree are 0.42, surpass other two models. Overall, logistic regression is best predict the employee attrition.
   - Since the dataset is imbalanced. Resampling such as oversampling or undersampling is suggested to retrain the models.
