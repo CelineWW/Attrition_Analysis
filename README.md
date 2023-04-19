@@ -1,5 +1,6 @@
 # Employee_Attrition_Prediction
 ## Overview 
+To verify if the duration of employment depends on employee demografics, this project trys to discover which are the main effects of employees to make their decision on leave or stay in the company. Based on the analysis, build machine learning models to make predictions and calculate the model accuracy.
    - Analyze employee's charactistics who left or stayed in the company.
    - Use machine learning to build models and check model performance on predictions. 
 
@@ -25,8 +26,8 @@
      - StandardHours 80
      - EmployeeCount 1
      
-    ![hist1](https://user-images.githubusercontent.com/105877888/233159024-cf27cc13-8bba-4933-861b-34b56d7ec0cb.png)
-    ![hist2](https://user-images.githubusercontent.com/105877888/233159087-ed33fdbd-8398-4b30-96f8-704bcebe775d.png)
+     ![hist1](https://user-images.githubusercontent.com/105877888/233161655-0e66f5a0-8e7f-43cc-8cf7-4c68e13d49f1.png)
+     ![hist2](https://user-images.githubusercontent.com/105877888/233161731-ff102ca9-2cd2-482e-84aa-6355e634abfc.png)
 
 ### Seperate dataset by attrition and compare the differences between employee demographics
    - Seperate dataset by attrition
@@ -36,6 +37,43 @@
       ```
      - :raising_hand_man: Employee those stayed: 1233 person (83.88%)
      - :no_good_man: Employee those left: 237 person (16.12%)
+     
+   - The relationships between employee demographics from the view of correlation map 
+      - Job level is strongly correlated with total working Years
+      - Monthly income is strongly correlated with Job level
+      - Monthly income is strongly correlated with total working Years
+      - Age is stongly correlated with monthly income
+      
+      
+      ![heatmap](https://user-images.githubusercontent.com/105877888/233162403-05dc1f8d-c227-4ab1-89f4-e17c731b81d4.png)
 
+   
+   - Differences between the demographics of stayed and left employees from the view of countplots and KDE plots 
+      - Countplots
+         - Single employees tend to leave compared to married and divorced
+         - Sales Representitives tend to leave compared to any other job 
+         - Less involved employees tend to leave the company 
+         - Less experienced (low job level) tend to leave the company 
 
+         ![countplot_age](https://user-images.githubusercontent.com/105877888/233164158-7455b082-928a-4846-8740-d099a629890b.png)
+         ![countplot_married](https://user-images.githubusercontent.com/105877888/233164204-74d407f2-a139-4f9a-9463-6600d8427f2f.png)
+      
+      - KDE plots
+         - Employees who live farther than 10miles from the company tend to leave
+         - Employees younger than 30yrs show higher attrition than over 30yrs 
+         - Stay in the same team encourage employees to stay
+         - Less than 10 total working years tend to leave the company 
+          
+         ![kde_age](https://user-images.githubusercontent.com/105877888/233166423-55bd2372-c1f7-447f-8be3-60f0aa18651c.png)
+         ![kde_distance from home](https://user-images.githubusercontent.com/105877888/233166502-1af586fa-424e-407c-8373-94a957adff2f.png)
+         ![kde_years with current manager](https://user-images.githubusercontent.com/105877888/233166559-8e04e6b3-fdb9-4789-b6c2-43ac555551b2.png)
+         ![kde_total working years](https://user-images.githubusercontent.com/105877888/233166593-26c64770-438e-49de-8e8e-9720b8115ec4.png)
+
+      - BoxPlot 
+         - The following charts show monthly income based on **Gender** and **JobRole**
+      
+         ![boxplot_gender](https://user-images.githubusercontent.com/105877888/233167669-63c23e23-d2ba-43e3-b580-ea0490aa09c4.png)
+         ![boxplot_jobrole](https://user-images.githubusercontent.com/105877888/233167696-fca58782-e239-45d4-8d55-110bf17077b9.png)
+
+      
 ## Summary
