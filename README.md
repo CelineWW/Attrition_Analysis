@@ -12,11 +12,12 @@
    
 ## Results
 ### Data Preprocessing
-   - Convert *Yes* or *Y* to *1* or *0*
-   ``` # Use lambda function to convert boolen columns.
-employee_df['Attrition'] = employee_df['Attrition'].apply(lambda x:1 if x == 'Yes' else 0)
-employee_df['OverTime'] = employee_df['OverTime'].apply(lambda x:1 if x == 'Yes' else 0)
-employee_df['Over18'] = employee_df['Over18'].apply(lambda x:1 if x == 'Y' else 0)```
+   - Use lambda function to convert boolen columns to numerical data.
+      ```
+      employee_df['Attrition'] = employee_df['Attrition'].apply(lambda x:1 if x == 'Yes' else 0)
+      employee_df['OverTime'] = employee_df['OverTime'].apply(lambda x:1 if x == 'Yes' else 0)
+      employee_df['Over18'] = employee_df['Over18'].apply(lambda x:1 if x == 'Y' else 0)
+      ```
    Over18 Y
    OverTime
    StandardHours 80
